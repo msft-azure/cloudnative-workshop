@@ -1,1 +1,1 @@
-# cloudnative-workshop
+# Cloud Native Workshop
