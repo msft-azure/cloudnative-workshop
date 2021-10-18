@@ -73,12 +73,9 @@ Ingress cotrollers available:
 - Containers
 
 ### Resource Management 
-- Resource Quotas
-- Limit Range
-- Pod Disruption Budget
-
-
-
+- [Resource Quotas](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler#enforce-resource-quotas) 
+- [Limit Range](https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-default-namespace)
+- [Pod Disruption Budget](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler#plan-for-availability-using-pod-disruption-budgets)
 
 ### Monitoring
 - Container Insights
