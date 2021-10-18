@@ -32,25 +32,25 @@ Ingress cotrollers available:
 - [Kubernetes network policies](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-network#control-traffic-flow-with-network-policies)
 - [Bastion host to AKS nodes](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-network#securely-connect-to-nodes-through-a-bastion-host)
 
-## Authentication and Authorisation
+### Authentication and Authorisation
 - [Azure AD-Kubernetes RBAC](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-identity#use-kubernetes-role-based-access-control-kubernetes-rbac)
 - [Azure AD-Azure RBAC](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-identity#use-azure-rbac)
 - [Azure AD-Pod-managed Identities](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-identity#use-pod-managed-identities)
 
-## Azure Security Centre Integration
+### Azure Security Centre Integration
 - [Defender for Kubernetes](https://docs.microsoft.com/en-us/azure/security-center/defender-for-kubernetes-introduction)
 - [Protect Kubernetes workload](https://docs.microsoft.com/en-us/azure/security-center/kubernetes-workload-protections#availability)
 
-## Azure Policies
+### Azure Policies
 - [Azure Policy Regulatory Compliance for AKS](https://docs.microsoft.com/en-us/azure/aks/security-controls-policy)
 
-## Container registry and image security
+### Container registry and image security
 - [Secure Images](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-container-image-management)
 - [Defender for Container Registries](https://docs.microsoft.com/en-us/azure/security-center/defender-for-container-registries-introduction)
 - [Scan Registry images](https://docs.microsoft.com/en-us/azure/security-center/defender-for-container-registries-usage)
 - [Scan images in CI/CD pipeline](https://docs.microsoft.com/en-us/azure/security-center/defender-for-container-registries-cicd)
 
-## Cluster Security
+### Cluster Security
 - [Cluster Security](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-security)
 - [Pod Security Policy](https://docs.microsoft.com/en-us/azure/aks/use-pod-security-policies)
 - AKS automatically updates security patches, [Kured](https://github.com/weaveworks/kured) for reboot
@@ -59,6 +59,20 @@ Ingress cotrollers available:
 
 
 ## Operations
+### Cluster Isolation
+- [Physically isolate clusters](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-isolation#physically-isolate-clusters)
+- [Logically isolate clusters with namespaces](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-isolation#logically-isolate-clusters)
+### Isolation Dimensions
+#### Scheduling
+ -  [Taints and Tolerations](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-advanced-scheduler#provide-dedicated-nodes-using-taints-and-tolerations)- hard constraints
+ -  [Node Selectors and affinity](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-advanced-scheduler#control-pod-scheduling-using-node-selectors-and-affinity)- soft constraints
+#### Networking
+- - [Kubernetes network policies](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-network#control-traffic-flow-with-network-policies)
+#### Authentication and Authorisation
+- RBAC with AAD
+#### Containers
+
+
 ### Monitoring
 - Container Insights
 - Prometheus integration
