@@ -52,6 +52,11 @@ Ingress cotrollers available:
 
 ## Cluster Security
 - [Cluster Security](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-security)
+- [Pod Security Policy](https://docs.microsoft.com/en-us/azure/aks/use-pod-security-policies)
+- AKS automatically updates security patches, [Kured](https://github.com/weaveworks/kured) for reboot
+- [API server-Private AKS cluster](https://docs.microsoft.com/en-us/azure/aks/private-clusters)
+- [API server using authorized IP](https://docs.microsoft.com/en-us/azure/aks/api-server-authorized-ip-ranges)
+
 
 ## Operations
 ### Monitoring
