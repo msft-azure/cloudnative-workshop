@@ -63,14 +63,21 @@ Ingress cotrollers available:
 - [Physically isolate clusters](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-isolation#physically-isolate-clusters)
 - [Logically isolate clusters with namespaces](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-isolation#logically-isolate-clusters)
 ### Isolation Dimensions
-#### Scheduling
- -  [Taints and Tolerations](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-advanced-scheduler#provide-dedicated-nodes-using-taints-and-tolerations)- hard constraints
- -  [Node Selectors and affinity](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-advanced-scheduler#control-pod-scheduling-using-node-selectors-and-affinity)- soft constraints
-#### Networking
-- - [Kubernetes network policies](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-network#control-traffic-flow-with-network-policies)
-#### Authentication and Authorisation
-- RBAC with AAD
-#### Containers
+- Scheduling
+  -  [Taints and Tolerations](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-advanced-scheduler#provide-dedicated-nodes-using-taints-and-tolerations)- hard constraints
+  -  [Node Selectors and affinity](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-advanced-scheduler#control-pod-scheduling-using-node-selectors-and-affinity)- soft constraints
+- Networking
+  - [Kubernetes network policies](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-network#control-traffic-flow-with-network-policies)
+- Authentication and Authorisation
+  - RBAC with AAD
+- Containers
+
+### Resource Management 
+- Resource Quotas
+- Limit Range
+- Pod Disruption Budget
+
+
 
 
 ### Monitoring
