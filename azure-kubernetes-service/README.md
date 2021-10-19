@@ -1,10 +1,10 @@
-# Azure Kubernetes Service Best Practices
+# Azure Kubernetes Service - Well Acrhitected - Best Practices
 
 ## AKS Architecture
 - [AKS Secure Baseline](https://github.com/mspnp/aks-secure-baseline)
 - [Enterprise scale Landing zone](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/aks/enterprise-scale-landing-zone)
 
-## Security
+## 1. Security
 
 ### Networking
 ####  KubeNetworking Model
@@ -53,12 +53,13 @@ Ingress cotrollers available:
 ### Cluster Security
 - [Cluster Security](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-security)
 - [Pod Security Policy](https://docs.microsoft.com/en-us/azure/aks/use-pod-security-policies)
+- [Key Vault- Secret store driver](https://docs.microsoft.com/en-us/azure/aks/developer-best-practices-pod-security#limit-credential-exposure) 
 - AKS automatically updates security patches, [Kured](https://github.com/weaveworks/kured) for reboot
 - [API server-Private AKS cluster](https://docs.microsoft.com/en-us/azure/aks/private-clusters)
 - [API server using authorized IP](https://docs.microsoft.com/en-us/azure/aks/api-server-authorized-ip-ranges)
 
 
-## Operations
+## 2. Operations
 ### Cluster Isolation
 - [Physically isolate clusters](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-isolation#physically-isolate-clusters)
 - [Logically isolate clusters with namespaces](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-isolation#logically-isolate-clusters)
@@ -78,7 +79,43 @@ Ingress cotrollers available:
 - [Pod Disruption Budget](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-scheduler#plan-for-availability-using-pod-disruption-budgets)
 
 ### Monitoring
-- Container Insights
-- Prometheus integration
-- Application Insights
-#### Service Mesh
+- [Azure Monitor Container Insights](https://docs.microsoft.com/en-us/azure/aks/monitor-aks)
+- [Prometheus integration](https://docs.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-prometheus-integration)
+- [Application Insights] (https://docs.microsoft.com/en-us/azure/azure-monitor/app/kubernetes-codeless)
+
+### DevOps
+- [CI/CD to AKS with GitHub Actions](https://docs.microsoft.com/en-us/azure/developer/jenkins/deploy-from-github-to-aks)
+- [CI/CD to AKS with Azure DevOps](https://docs.microsoft.com/en-us/azure/devops-project/azure-devops-project-aks?toc=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Faks%2Ftoc.json&bc=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fbread%2Ftoc.json)
+
+### Service Mesh
+- [Selection Criteria](https://docs.microsoft.com/en-us/azure/aks/servicemesh-about#selection-criteria)
+- [Istio](https://istio.io/latest/docs/setup/install/)
+- [Linkerd](https://linkerd.io/2.11/getting-started/)
+- [Consul Connect](https://learn.hashicorp.com/tutorials/consul/service-mesh-deploy)
+
+### Storage
+- [Storage options](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-storage)
+  - Azure Files
+  - Azure Disks
+  - Blobfuse
+
+## 3. Perfromance
+### Scaling
+- [Manually scale](https://docs.microsoft.com/en-us/azure/aks/concepts-scale#manually-scale-pods-or-nodes)
+- [Horizontal pod autoscaler (HPA)](https://docs.microsoft.com/en-us/azure/aks/concepts-scale#horizontal-pod-autoscaler)
+- [Cluster autoscaler](https://docs.microsoft.com/en-us/azure/aks/concepts-scale#cluster-autoscaler)
+- [Burst to Azure Container Instances](https://docs.microsoft.com/en-us/azure/aks/concepts-scale#burst-to-azure-container-instances)
+
+## 4. Reliability
+- [AKS Availability zones](https://docs.microsoft.com/en-us/azure/aks/availability-zones)
+- [Azure paired regions](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions) 
+- [Geo replication for Container images](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-multi-region#enable-geo-replication-for-container-images)
+- [Storage Migration plan](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-multi-region#create-a-storage-migration-plan)
+
+## 5. Cost Management
+- [Cost Saving options for Nodes](https://azure.microsoft.com/en-in/pricing/details/kubernetes-service/)
+  -  [1 year reserved]
+  -  [3 years reserved]
+  -  [spot instance]
+- [multiple nodes and enable scale to zero](https://docs.microsoft.com/en-us/learn/modules/aks-optimize-compute-costs/2-node-pools)
+- [AKS resource-quota policies by using Azure Policy](https://docs.microsoft.com/en-us/learn/modules/aks-optimize-compute-costs/6-resource-quota-azure-policy)
