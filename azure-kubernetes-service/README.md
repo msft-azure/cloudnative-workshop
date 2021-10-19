@@ -61,6 +61,7 @@ Ingress cotrollers available:
 
 ## 2. Operations
 ### Cluster Isolation
+- [System and User nodepool separation](https://docs.microsoft.com/en-us/azure/aks/use-system-pools#system-and-user-node-pools)
 - [Physically isolate clusters](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-isolation#physically-isolate-clusters)
 - [Logically isolate clusters with namespaces](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-isolation#logically-isolate-clusters)
 ### Isolation Dimensions
@@ -99,7 +100,7 @@ Ingress cotrollers available:
   - Azure Disks
   - Blobfuse
 
-## 3. Perfromance
+## 3. Performance
 ### Scaling
 - [Manually scale](https://docs.microsoft.com/en-us/azure/aks/concepts-scale#manually-scale-pods-or-nodes)
 - [Horizontal pod autoscaler (HPA)](https://docs.microsoft.com/en-us/azure/aks/concepts-scale#horizontal-pod-autoscaler)
