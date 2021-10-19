@@ -1,4 +1,4 @@
-# Azure Kubernetes Service - Well Acrhitected - Best Practices
+# Azure Kubernetes Service - Well Architected - Best Practices
 
 ## AKS Architecture
 - [AKS Secure Baseline](https://github.com/mspnp/aks-secure-baseline)
